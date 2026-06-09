@@ -22,6 +22,8 @@
     --sage:#5A7A5A;
     --green:#1A4731;
     --teal:#3A7D6E;
+    --red:#8B1A1A;
+    --red-deep:#6B0F0F;
     --border:rgba(201,168,76,0.25);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -447,6 +449,10 @@
     letter-spacing:0.1em;
   }
 
+  .lang-card.spanish .lang-card-top{background:var(--red);}
+  .lang-card.spanish .lang-card-top::after{content:'ES';color:var(--gold);}
+  .lang-card.spanish .lang-cta{background:var(--red);}
+  .lang-card.spanish .lang-cta:hover{background:var(--red-deep);}
   @media(max-width:600px){
     .languages-grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr 1fr;}
@@ -545,6 +551,32 @@
       </div>
     </a>
 
+
+    <!-- SPANISH -->
+    <a href="https://spanish.linguavita.app" class="lang-card spanish">
+      <div class="lang-card-top">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-name">Spanish</span>
+        <span class="lang-native">¿Hablas español?</span>
+      </div>
+      <div class="lang-card-bottom">
+        <ul class="lang-features">
+          <li>400 words across 16 categories</li>
+          <li>7 learning modes including Listen &amp; Sentence Cards</li>
+          <li>12 verbs including ser &amp; estar — 3 tenses with audio</li>
+          <li>Castilian Spanish pronunciation throughout</li>
+          <li>Daily 10 — personalised word selection</li>
+        </ul>
+        <div class="lang-price">
+          <div>
+            <span class="lang-price-amount">£8.50 / €9.99</span>
+            <span class="lang-price-note">One-off payment</span>
+          </div>
+        </div>
+        <span class="lang-cta spanish-cta">Explore Spanish →</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -554,11 +586,7 @@
   <h2 class="section-title">More languages <em>coming soon</em></h2>
   <p class="coming-soon-sub">Linguavita is growing. Each new language gets the same care, depth and elegance as the first.</p>
   <div class="languages-coming">
-    <div class="coming-pill">
-      <span class="coming-flag">🇪🇸</span>
-      <span class="coming-name">Spanish</span>
-    </div>
-    <div class="coming-pill">
+<div class="coming-pill">
       <span class="coming-flag">🇩🇪</span>
       <span class="coming-name">German</span>
     </div>
@@ -626,6 +654,7 @@
   <div class="footer-links">
     <a href="https://french.linguavita.app">French</a>
     <a href="https://portuguese.linguavita.app">Portuguese</a>
+    <a href="https://spanish.linguavita.app">Spanish</a>
     <a href="mailto:contactus@linguavita.app">Contact</a>
   </div>
   <p class="footer-copy">© 2026 Linguavita · Language for Life · <a href="mailto:contactus@linguavita.app" style="color:inherit;text-decoration:none;">contactus@linguavita.app</a></p>
